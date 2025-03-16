@@ -15,24 +15,116 @@
         </nav>
     </header>
     <section>
-    <img src="you_are_here.jpg">
+    <img src="you_are_here.jpg" alt="You are here street signs" width="250" height="200">
     <div>
-        <h2>Hello! My name is Mike Mann.  I'm a software developer</h2>
-        <p>Highly skilled software engineer with extensive experience in embedded systems development,
-        network communication, and industrial protocol implementation. Proven ability to architect,
+        <h2>Hello! My name is Mike Mann and you have reached my portfolio.</h2>
+        <p>I am a highly skilled software engineer with extensive experience in embedded systems development,
+        network communication, and industrial protocol implementation. I have a proven ability to architect,
         develop, and maintain complex software solutions, including EtherNet/IP protocol stacks and
         automated vehicle GUI interfaces. Expertise in C/C++, C#, and a range of embedded platforms
         (Windows, Linux, VxWorks) with a strong track record of mentoring teams, driving protocol
         standards, and contributing to open-source projects like Wireshark (1900+ commits).</p>
-        <a href="https://github.com/mmann78" target="blank">See my work</a>
     </div>
     </section>
     <section>
-        <h2>Recent Work</h2>
-        <article>
-            <h3>Python</h3>
+        <div class="container">
+        <div class="skills">
+            <h2>Professional Summary</h2>
             <h3>JBT</h3>
-        </article>
+            <div class="row">
+                <div class="column left">
+                    <img class="column-img" src="JBT.png" alt="JBT Automated Guided Vehicles">
+                </div>
+                <div class="column right">
+                    <p>At JBT I was part of the <a href="https://www.jbtc.com/automated-systems/">Automated Systems</a> group that made Automated
+                    Guided Vehicles (AGVs).  My 6+ years at JBT were spent on the vehicle software side. With my many years of C++ and embedded experience
+                    I quickly became the lead developer and "unofficial architect".  I spent a lot of time refactoring code to make it more object-oriented and
+                    creating libraries for modularity and reuse.  I added more and better ways to diagnose problems with the AGVs in the field to make the 
+                    field engineers' job easier. All with the goal of reducing a large amount of accumulated technical debt.</p>
+                    <p>I also wrote several internal tools for diagnostics and easier application development.  These were both full C# applications using
+                    WPF/MVVM as well as command line tools</p>
+                    <p>The vehicle software team was already using git when I arrived, but I was able to share my knowledge of "best practices" and also
+                    help other departments in adopting git</p>
+                </div>
+            </div>
+            <h3>Pyramid Solutions</h3>
+            <div class="row">
+                <div class="column right">
+                    <p>In my 17 years at Pyramid Solutions I was involved in many projects. I was part of the Data Communications department that focused on helping
+                    clients with software applications that involved network connectivity (PC applications, embedded devices, TCP/IP, Serial, etc). This exposed me to
+                    a lot of different development environments and IDEs.  And because of this, I'm comfortable finding my way through any build environment or working
+                    with any IDE, even if I haven't used it before.  I've also used several different source control schemes (although I prefer git).</p>
+                    <p>The bulk of my involvement at Pyramid Solutions centered around the industrial protocol EtherNet/IP.
+                    I was responsible for Pyramid Solution's EtherNet/IP's protocol stack.  It was sold as a standalone product, but I would also frequently do the 
+                    integration into clients' embedded devices.  This is where I learned what "code portability" really means and that not all TCP/IP stacks 
+                    are created equal, i.e. BSD compatible.</p>
+                    <p>I also put a lot of time towards ODVA, the standards organization that owns and promotes the EtherNet/IP protocol (CIP over Ethernet).  I was involved
+                    with the conformance and interoperability of EtherNet/IP devices, meeting with EtherNet/IP device vendors to ensure compatibility between all devices.  I
+                    was also instrumental in defining the specification for CIP-Modbus, a network translation layer when going from CIP to Modbus devices.</p>
+                </div>
+                <div class="column left">
+                    <img class="column-img" src="pyramid-logo_200px.png" alt="Pyramid Solutions logo">
+                </div>
+            </div>
+        </div>
+
+        <div class="skills">
+            <h2>Passion Projects</h2>
+            <p>Most of my professional code development is not available for public consumption.
+            However, here are some projects I've worked on independently.</p>
+            <h3>Python + AI</h3>
+            <div class="row">
+                <div class="column left">
+                    <img class="column-img" src="gemini_python.png" alt="Python and Gemini logos">
+                </div>
+                <div class="column right">
+                    <p>I was interested in learning Python and also about how AI is helping to write code. So I took the
+                    Udemy course <a href="https://www.udemy.com/course/100-days-of-code">100 Days of Code: The Complete Python Pro Bootcamp</a>
+                    with a twist.  While I did the exercises myself, I also tried to prompt Google's Gemini to generate
+                    code that would also complete the exercises. Overall, Gemini did fairly well, but it wasn't always
+                    a clean copy/paste or Gemini provided different working solutions than expected by the exercise.</p>
+                    <p>The repository of the code can be found <a href="https://github.com/mmann78/100DaysOfCode">here</a>.</p>
+                </div>
+            </div>
+            <h3>Wireshark</h3>
+            <div class="row">
+                <div class="column right">
+                <p>I was introduced to Wireshark during my time at Pyramid Solutions. At the time I was working on additional
+                features to the EtherNet/IP protocol and the Wireshark dissection for it was incomplete. After getting over
+                the hump of setting up the development environment (well documented, but lots of steps), I submitted my first
+                patch.  After a few rounds of review, the patch was accepted.  I realized that EtherNet/IP is a "complicated"
+                protocol from a dissection standpoint (involves both TCP and UDP and several dissection layers) and the best way
+                to learn the Wireshark API to continue to improve the EtherNet/IP dissector was to try to understand
+                and improve other protocols from existing bug reports. I eventually earned a spot as a core developer,
+                with a lot of focus on refactoring the dissection engine for the transition to the Qt GUI interface
+                and code reviewing submitted patches and trying to get them integrated into the main branch. I also attended
+                a few Sharkfests (Wireshark developer/user conference)</p>
+                <p>Most of my work has already been submitted to the <a href="https://gitlab.com/wireshark/wireshark">main branch</a> (over 1900 commits!),
+                but I keep a <a href="https://gitlab.com/mmann78/wireshark">forked repository</a> as that's how new
+                functionality is currently added.</p>
+                </div>
+                <div class="column left">
+                    <img class="column-img" src="wireshark-logo-light.png"  alt="Wireshark logo">
+                </div>
+            </div>
+            <h3>Carcassonne</h3>
+            <div class="row">
+                <div class="column left">
+                <img class="column-img" src="Carcassonne.jpg"  alt="Carcassonne on TableTop Simulator">
+                </div>
+                <div class="column right">
+                <p></p><a href="https://en.wikipedia.org/wiki/Carcassonne_(board_game)">Carcassonne</a> is my favorite
+                "board" game. You place tiles and meeples to construct castles, roads and farms to earn points.
+                During the pandemic, I discovered the (abandoned) source to play Carcassonne on <a href="https://www.tabletopsimulator.com/">Tabletop Simulator</a>.
+                It's written in Lua, which I was unfamiliar with, but I lept at the chance to work on it.  My two
+                major areas of focus were refactoring the code to more easily separate and identify the different
+                expansion rules and adding final game statistics to provide analytics to game play.  Was also able
+                to have friends and family test my changes in our weekly online game.</p>
+                <p>The repository of code can be found <a href="https://github.com/mmann78/TTSCarcassonne">here</a>.</p>
+                </div>
+            </div>
+        </div>
+        </div>
     </section>
 </body>
 </html>

@@ -1,5 +1,13 @@
+/* Color palette taken from https://colorhunt.co/palette/f3f3e0133e87608bc1cbdceb
+#F3F3E0 - background
+#133E87 - heading text color
+#608BC1
+#CBDCEB - navigation background
+*/
+
 nav {
-    background-color: #f0f0f0;
+    background-color: #CBDCEB;
+    color: #608bc1;
     padding: 10px;
     text-align: center;
 }
@@ -7,13 +15,54 @@ nav {
 nav a {
     margin: 0 10px;
     text-decoration: none;
-    color: #333;
+    color: #133E87;
 }
 
 nav a:hover {
     text-decoration: underline;
 }
 
+body {
+   background-color: #F3F3E0;
+}
+
+h2 {
+    color: #133E87;
+    text-align: center;
+}
+
+h3 {
+    color: #133E87;
+    align-items: center;
+}
+
 .content {
     padding: 20px;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+}
+
+.column.left {
+    text-align: right;
+}
+
+.column.right {
+    text-align: left;
+}
+
+.column-img {
+    max-width: 200px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

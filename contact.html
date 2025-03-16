@@ -1,5 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+    .container {
+        display: flex; /* Use flexbox for layout */
+        align-items: center; /* Vertically align items in the container */
+        width: 500px; /* Example width */
+    }
+        
+    .text-container {
+        text-align: left; /* Center text horizontally */
+    }
+    
+    .text-container p {
+        margin: 0; /* Remove default paragraph margins */
+    }
+    
+    </style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,11 +30,32 @@
     </nav>
 
     <div class="content">
-      <h1>Contact Me</h1>
-      <p>You can reach me at:</p>
-      <p>Email:</p><img src="email.jpg", alt="anti-spam email">
-      <p>Phone:</p><img src="phone.jpg", alt="anti-spam phone">
-      <p><a href="https://www.linkedin.com/in/mike-mann-03b78b24/">LinkedIn</a></p>
+        <div class="text-container">
+            <h1>Contact Me</h1>
+            <p>(Images of information are intended to discourage spamming.  Because what is easy to copy/paste is also easy to scrape)</p>
+            <br><br>
+        </div>
+      <div class="container">
+        <div class="text-container">
+            <p>Email:</p>
+          </div>
+          <div class="img-container">
+          <img src="email.png", alt="anti-spam email" width="300" height="40">
+        </div>
+      </div>
+      <div class="container">
+        <div class="text-container">
+            <p>Phone:</p>
+          </div>
+          <div class="img-container">
+          <img src="phone.png", alt="anti-spam phone" width="300" height="40">
+        </div>
+      </div>
+      <div class="container">
+        <div class="text-container">
+            <p><a href="https://www.linkedin.com/in/mike-mann-03b78b24/">LinkedIn</a></p>
+        </div>
+      </div>
     </div>
 
 </body>
